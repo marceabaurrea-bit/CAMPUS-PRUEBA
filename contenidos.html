@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IAE - Contenidos</title>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="header">
+    <img src="pngs/logoinstitucional.png" alt="Logo institucional" class="logo">
+  </header>
+
+  <nav class="nav">
+    <a href="index.html" class="nav-link">Inicio</a>
+    <a href="formaciones.html" class="nav-link">Formaciones</a>
+    <a href="campus.html" class="nav-link">Campus</a>
+  </nav>
+
+  <main class="main">
+    <section class="inicio">
+      <h1>Contenidos por curso</h1>
+
+      <p>
+        En esta página se presentan los contenidos principales de cada formación.
+        La información está organizada por curso para facilitar su lectura.
+      </p>
+
+      <h2>HTML</h2>
+      <ul>
+        <li>Estructura básica de un documento HTML</li>
+        <li>Etiquetas semánticas: header, nav, main, section, footer</li>
+        <li>Enlaces e imágenes</li>
+        <li>Listas (ul, li) y tablas (table, tr, th, td)</li>
+        <li>Formularios básicos (form, input, textarea)</li>
+      </ul>
+
+      <h2>CSS</h2>
+      <ul>
+        <li>Selectores: etiqueta, clase e id</li>
+        <li>Colores, fondos y tipografías</li>
+        <li>Box model: margin, padding y border</li>
+        <li>Estilización de menú y botones</li>
+        <li>Diseño de tablas y formularios</li>
+      </ul>
+
+      <h2>Python</h2>
+      <ul>
+        <li>Introducción a la programación</li>
+        <li>Variables y tipos de datos</li>
+        <li>Condicionales (if / else)</li>
+        <li>Bucles (for / while)</li>
+        <li>Funciones básicas</li>
+      </ul>
+
+      <p class="link-contenidos">
+        <a href="formaciones.html">Volver a Formaciones</a>
+      </p>
+
+  
+    </section>
+  </main>
+
+ <!-- ASIDE UNIFICADO -->
+  <aside class="aside">
+    <h2 class="aside-title">Formulario de consultas</h2>
+
+    <form class="form" action="#enviado" method="get">
+      <label class="form-label" for="nombre">Nombre y apellido</label>
+      <input
+        class="form-input"
+        type="text"
+        id="nombre"
+        name="nombre"
+        placeholder="Escribí tu nombre completo"
+        required
+      >
+
+      <label class="form-label" for="contacto">Número de contacto</label>
+      <input
+        class="form-input"
+        type="tel"
+        id="contacto"
+        name="contacto"
+        placeholder="Ej: 11 1234 5678"
+        required
+      >
+
+      <label class="form-label" for="mail">Mail</label>
+      <input
+        class="form-input"
+        type="email"
+        id="mail"
+        name="mail"
+        placeholder="Ej: nombre@mail.com"
+        required
+      >
+
+      <p>Tema de la consulta:</p>
+      <label>
+        <input type="checkbox" name="tema" value="html">
+        HTML
+      </label>
+      <label>
+        <input type="checkbox" name="tema" value="css">
+        CSS
+      </label>
+      <label>
+        <input type="checkbox" name="tema" value="python">
+        Python
+      </label>
+
+      <label class="form-label" for="consulta">Consulta</label>
+      <textarea
+        class="form-textarea"
+        id="consulta"
+        name="consulta"
+        rows="4"
+        placeholder="Escribí tu consulta aquí..."
+        required
+      ></textarea>
+
+      <button class="form-btn" type="submit">Enviar</button>
+    </form>
+
+    <p id="enviado" class="mensaje-enviado">
+      Consulta enviada. ¡Gracias por contactarnos!
+    </p>
+  </aside>
+
+
+</body>
+</html>

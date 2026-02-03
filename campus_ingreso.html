@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IAE - Campus Virtual</title>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ENCABEZADO -->
+  <header class="header">
+    <img src="pngs/logoinstitucional.png" alt="Logo institucional" class="logo">
+  </header>
+
+  <!-- MENÚ DE NAVEGACIÓN -->
+  <nav class="nav">
+    <a href="index.html" class="nav-link">Inicio</a>
+    <a href="formaciones.html" class="nav-link">Formaciones</a>
+    <a href="campus.html" class="nav-link active">Campus</a>
+  </nav>
+
+  <!-- CONTENIDO PRINCIPAL DEL CAMPUS -->
+  <main class="main">
+    <section class="inicio">
+      <h1>HTML</h1>
+
+      <p>
+        Bienvenido al entorno virtual del Instituto de Aprendizaje Educativo.
+        Desde aquí podés acceder a los materiales, videos y evaluaciones del curso.
+      </p>
+
+      <h2>Secciones del curso</h2>
+
+      <div class="secciones-campus">
+
+        <!-- SECCIÓN PDF -->
+        <div class="bloque-campus">
+          <h3>Material en PDF</h3>
+          <p>Accedé al material teórico del curso en formato descargable.</p>
+<a href="material.pdf" class="link-campus" target="_blank">Abrir PDF</a>
+        </div>
+
+<!-- SECCIÓN VIDEO -->
+<div class="bloque-campus">
+  <h3>Video de la clase</h3>
+  <p>Visualizá el contenido audiovisual complementario del curso.</p>
+
+  <!-- Link al video externo -->
+  <a href="youtube_HTML en dos minutos.mp4" target="_blank" class="link-campus">
+    Ver video en YouTube
+  </a>
+
+  <!-- Video embebido en la página -->
+  <iframe
+    class="video-campus"
+    src="youtube_HTML en dos minutos.mp4"
+    allowfullscreen>
+  </iframe>
+</div>
+
+        <!-- SECCIÓN EXAMEN -->
+        <div class="bloque-campus">
+          <h3>Examen</h3>
+          <p>Ingresá a la evaluación final del curso.</p>
+          <a href="examenfinal.pdf" class="link-campus">Ir al Examen</a>
+        </div>
+
+      </div>
+
+      <p class="link-contenidos">
+        <a href="campus.html">Cerrar sesión</a>
+      </p>
+
+  
+    </section>
+  </main>
+
+</body>
+</html>

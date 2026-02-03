@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IAE - Formaciones</title>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ENCABEZADO -->
+  <header class="header">
+    <img src="pngs/logoinstitucional.png" alt="Logo institucional" class="logo">
+  </header>
+
+  <!-- MENÚ DE NAVEGACIÓN -->
+  <nav class="nav">
+    <a href="index.html" class="nav-link">Inicio</a>
+    <a href="formaciones.html" class="nav-link active">Formaciones</a>
+    <a href="campus.html" class="nav-link">Campus</a>
+  </nav>
+
+  <main class="main">
+    <section class="inicio">
+      <h1>Nuestras Formaciones</h1>
+
+      <p>
+        En el Instituto de Aprendizaje Educativo ofrecemos propuestas de formación orientadas
+        al desarrollo de habilidades tecnológicas y profesionales, con un enfoque práctico
+        y actualizado.
+      </p>
+
+      <p>
+        Las formaciones están diseñadas para principiantes y estudiantes en proceso de
+        especialización, combinando contenidos teóricos con actividades prácticas y
+        certificación al finalizar cada curso.
+      </p>
+
+  
+      <ul>
+
+        <h2>Formaciones Disponibles </h2>
+
+<table class="tabla-formaciones">
+  <tr>
+    <th>Curso</th>
+    <th>Descripción</th>
+  </tr>
+  <tr>
+    <td>HTML</td>
+    <td>Estructura y contenido de páginas web.</td>
+  </tr>
+  <tr>
+    <td>CSS</td>
+    <td>Diseño visual, estilos y presentación del sitio.</td>
+  </tr>
+  <tr>
+    <td>Python</td>
+    <td>Introducción a la programación y lógica básica.</td>
+  </tr>
+</table>
+
+      </ul>
+
+      <p class="link-contenidos">
+  <a href="contenidos.html">Ver contenidos de cada curso</a>
+</p>
+
+
+
+
+  </main>
+
+<!-- ASIDE UNIFICADO -->
+  <aside class="aside">
+    <h2 class="aside-title">Formulario de consultas</h2>
+
+    <form class="form" action="#enviado" method="get">
+      <label class="form-label" for="nombre">Nombre y apellido</label>
+      <input
+        class="form-input"
+        type="text"
+        id="nombre"
+        name="nombre"
+        placeholder="Escribí tu nombre completo"
+        required
+      >
+
+      <label class="form-label" for="contacto">Número de contacto</label>
+      <input
+        class="form-input"
+        type="tel"
+        id="contacto"
+        name="contacto"
+        placeholder="Ej: 11 1234 5678"
+        required
+      >
+
+      <label class="form-label" for="mail">Mail</label>
+      <input
+        class="form-input"
+        type="email"
+        id="mail"
+        name="mail"
+        placeholder="Ej: nombre@mail.com"
+        required
+      >
+
+      <p>Tema de la consulta:</p>
+      <label>
+        <input type="checkbox" name="tema" value="html">
+        HTML
+      </label>
+      <label>
+        <input type="checkbox" name="tema" value="css">
+        CSS
+      </label>
+      <label>
+        <input type="checkbox" name="tema" value="python">
+        Python
+      </label>
+
+      <label class="form-label" for="consulta">Consulta</label>
+      <textarea
+        class="form-textarea"
+        id="consulta"
+        name="consulta"
+        rows="4"
+        placeholder="Escribí tu consulta aquí..."
+        required
+      ></textarea>
+
+      <button class="form-btn" type="submit">Enviar</button>
+    </form>
+
+    <p id="enviado" class="mensaje-enviado">
+      Consulta enviada. ¡Gracias por contactarnos!
+    </p>
+  </aside>
+
+
+</body>
+</html>

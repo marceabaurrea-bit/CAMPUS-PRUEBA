@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IAE - Campus</title>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ENCABEZADO -->
+  <header class="header">
+    <img src="pngs/logoinstitucional.png" alt="Logo institucional" class="logo">
+  </header>
+
+  <!-- MENÚ DE NAVEGACIÓN -->
+  <nav class="nav">
+    <a href="index.html" class="nav-link">Inicio</a>
+    <a href="formaciones.html" class="nav-link">Formaciones</a>
+    <a href="campus.html" class="nav-link active">Campus</a>
+  </nav>
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <main class="main">
+    <section class="inicio">
+      <h1>Campus Virtual</h1>
+
+      <p>
+        En esta sección los estudiantes pueden acceder al campus virtual para ingresar
+        a los materiales de estudio, actividades y recursos educativos.
+      </p>
+
+      <h2>Acceso al campus</h2>
+<form class="form-campus" action="campus_ingreso.html" method="get">
+  <label class="form-label" for="mail-campus">Mail</label>
+  <input
+    class="form-input"
+    type="email"
+    id="mail-campus"
+    name="mail"
+    placeholder="Ingresá tu correo electrónico"
+    required
+  >
+
+  <label class="form-label" for="pass-campus">Contraseña</label>
+  <input
+    class="form-input"
+    type="password"
+    id="pass-campus"
+    name="password"
+    placeholder="Mínimo 6 caracteres"
+    minlength="6"
+    required
+  >
+
+  <button class="form-btn" type="submit">Ingresar</button>
+</form>
+
+   
+    </section>
+  </main>
+
+
+
+</body>
+</html>
