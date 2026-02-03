@@ -271,4 +271,18 @@ h2 {
   padding: 20px;
 }
 
+.footer-copy {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+
+  width: 100%;
+  background-color: black;
+  color: gray;
+  text-align: center;
+  padding: 15px;
+  font-family: sans-serif;
+  font-size: 14px;
+}
+
  
