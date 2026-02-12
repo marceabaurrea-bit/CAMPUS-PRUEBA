@@ -29,16 +29,13 @@ header.conteiner {
   background-color: black;   
   padding: 15px;
   text-align: center;  
-
-}
-.nav conteiner {
-
-border: 1px solid blanchedalmond;
+  border: 1px solid blanchedalmond;
  align-items: flex-start;
  height: 100px;
  gap: 10px;
 
-  }
+}
+
 
 .nav-link {
   text-decoration: none;   
