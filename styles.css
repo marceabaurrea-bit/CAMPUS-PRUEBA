@@ -13,17 +13,15 @@ body {
 
 header.container{
   height: 200px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  text-align: center;      
+  padding-top: 40px;       
+  box-sizing: border-box;
 }
 
-.logo {
-  width: 300px;
-  height: auto;
-    filter: drop-shadow(0 0 18px white);
-
+.logo{
+  display: inline-block; 
 }
+
 
 
 
