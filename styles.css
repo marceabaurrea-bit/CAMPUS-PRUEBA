@@ -40,9 +40,8 @@ header.container{
   color: white;           
   background-color: gray;
   padding: 10px 20px;
-  margin: 5px;
+  
   border-radius: 5px;    
-  display: inline-block;
 }
 
 .nav-link.active {
