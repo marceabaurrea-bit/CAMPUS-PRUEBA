@@ -26,10 +26,6 @@ header.container{
 }
 
 
-.nav-link.active {
-  background-color: white;
-  color: black;
-}
 
 /* Aside con formulario pegado al margen derecho */
 .aside {
@@ -277,18 +273,32 @@ h2 {
   font-size: 14px;
 }
 
- .nav{
-  display: flex !important;
-  flex-direction: column !important;
-  align-items: center !important;
-  gap: 10px !important;
-  text-align: center; /* opcional */
+.nav{
+  background-color: black;
+  padding: 15px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
 }
 
 .nav-link{
-  display: block !important;
-  width: 220px;              /* opcional: todos iguales */
-  text-align: center !important;
-  margin: 0 !important;
+  display: block;
+  width: 220px;
+  text-align: center;
+
+  text-decoration: none;
+  color: white;
+  background-color: gray;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: bold;
 }
+
+.nav-link.active{
+  background-color: white;
+  color: black;
+}
+
 
