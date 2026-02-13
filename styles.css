@@ -314,3 +314,8 @@ h2 {
   line-height: 1.6;
 }
 
+.layout .main{
+  flex: 1;
+  padding: 20px;
+}
+
