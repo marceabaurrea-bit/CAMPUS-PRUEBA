@@ -19,7 +19,12 @@ header.container{
 }
 
 .logo{
-  display: inline-block; 
+  width: 300px;      /* o 250px si lo querés más chico */
+  max-width: 90%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  filter: drop-shadow(0 0 18px white);
 }
 
 
