@@ -16,6 +16,7 @@ header.conteiner {
  align-items: flex-start;
  height: 200px;
  gap: 40px;
+  justify.content: center;
 }
 
 .logo {
