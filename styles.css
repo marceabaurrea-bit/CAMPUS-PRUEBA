@@ -13,10 +13,12 @@ body {
 
 header.container{
   height: 200px;
-  text-align: center;      
-  padding-top: 40px;       
-  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* por si el logo es grande */
 }
+
 
 .logo{
   width: 300px;      /* o 250px si lo querés más chico */
