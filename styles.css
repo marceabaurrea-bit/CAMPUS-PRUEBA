@@ -251,11 +251,6 @@ h2 {
   max-width: 1100px;
 }
 
-/* CONTENIDO PRINCIPAL */
-.main {
-  flex: 1;
-  padding: 20px;
-}
 
 .footer-copy {
   position: fixed;
