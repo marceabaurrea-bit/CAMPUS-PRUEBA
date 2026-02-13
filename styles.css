@@ -25,24 +25,6 @@ header.container{
 
 }
 
-.nav {
-  background-color: black;
-  padding: 15px;
-  display: flex;          
-  flex-direction: column; 
-  align-items: center;  
-  gap: 10px;             
-}
-
-
-.nav-link {
-  text-decoration: none;   
-  color: white;           
-  background-color: gray;
-  padding: 10px 20px;
-  
-  border-radius: 5px;    
-}
 
 .nav-link.active {
   background-color: white;
@@ -295,4 +277,18 @@ h2 {
   font-size: 14px;
 }
 
- 
+ .nav{
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  gap: 10px !important;
+  text-align: center; /* opcional */
+}
+
+.nav-link{
+  display: block !important;
+  width: 220px;              /* opcional: todos iguales */
+  text-align: center !important;
+  margin: 0 !important;
+}
+
