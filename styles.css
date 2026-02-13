@@ -11,13 +11,11 @@ body {
   border-bottom: 2px solid #1f2a44;
 }
 
-header.conteiner {
-  border: 3px solid blanchedalmond;
+header.container{
   height: 200px;
-
-  display: flex;              /* activa flexbox */
-  justify-content: center;    /* centra horizontal */
-  align-items: center;        /* centra vertical */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .logo {
