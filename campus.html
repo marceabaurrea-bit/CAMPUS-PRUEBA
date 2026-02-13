@@ -2,66 +2,82 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>IAE - Campus</title>
-
+  <title>Campus Virtual - Institución Educativa</title>
   <link rel="stylesheet" href="styles.css">
 </head>
+<script>
+  document.getElementById('campus-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    const email = document.getElementById('campus-user').value.trim();
+    const pass = document.getElementById('campus-pass').value;
+    const msg = document.getElementById('campus-msg');
+
+    // Validación simple
+    if (!email || !email.includes('@')) {
+      msg.style.color = "#ef4444";
+      msg.textContent = "❌ Ingresá un email válido.";
+      return;
+    }
+
+    if (!pass || pass.length < 6) {
+      msg.style.color = "#ef4444";
+      msg.textContent = "❌ La contraseña debe tener al menos 6 caracteres.";
+      return;
+    }
+
+    // Redirigir al campus (panel)
+    window.location.assign('panel.html');
+  });
+</script>
+
 <body>
 
-  <!-- ENCABEZADO -->
-  <header class="header">
-    <img src="pngs/logoinstitucional.png" alt="Logo institucional" class="logo">
-  </header>
+<header>
+  <img src="img/Gemini_Generated_Image_769uab769uab769u.png" alt="Logo" class="logo">
+  <h1>Campus Virtual</h1>
+</header>
 
-  <!-- MENÚ DE NAVEGACIÓN -->
-  <nav class="nav">
-    <a href="index.html" class="nav-link">Inicio</a>
-    <a href="formaciones.html" class="nav-link">Formaciones</a>
-    <a href="campus.html" class="nav-link active">Campus</a>
-  </nav>
+<nav>
+  <a href="index.html">Volver al sitio</a>
+</nav>
 
-  <!-- CONTENIDO PRINCIPAL -->
-  <main class="main">
-    <section class="inicio">
-      <h1>Campus Virtual</h1>
+<main>
+  <section class="seccion">
+    <h2>Ingreso al Campus</h2>
+    <p>Ingresá tu email y una contraseña de al menos 6 caracteres.</p>
 
-      <p>
-        En esta sección los estudiantes pueden acceder al campus virtual para ingresar
-        a los materiales de estudio, actividades y recursos educativos.
-      </p>
+    <div class="campus-box">
+      <form id="campus-form">
+        <label for="campus-user">Email</label>
+        <input 
+          id="campus-user" 
+          type="email" 
+          placeholder="alumno@mail.com" 
+          required
+        >
 
-      <h2>Acceso al campus</h2>
-<form class="form-campus" action="campus_ingreso.html" method="get">
-  <label class="form-label" for="mail-campus">Mail</label>
-  <input
-    class="form-input"
-    type="email"
-    id="mail-campus"
-    name="mail"
-    placeholder="Ingresá tu correo electrónico"
-    required
-  >
+        <label for="campus-pass">Contraseña</label>
+        <input 
+          id="campus-pass" 
+          type="password" 
+          placeholder="Mínimo 6 caracteres" 
+          required 
+          minlength="6"
+        >
 
-  <label class="form-label" for="pass-campus">Contraseña</label>
-  <input
-    class="form-input"
-    type="password"
-    id="pass-campus"
-    name="password"
-    placeholder="Mínimo 6 caracteres"
-    minlength="6"
-    required
-  >
+        <button type="submit">Ingresar</button>
 
-  <button class="form-btn" type="submit">Ingresar</button>
+        <p id="campus-msg" class="campus-msg"></p>
+      </form>
+      <form id="campus-form">
+  <input id="campus-user" type="email" required>
+  <input id="campus-pass" type="password" required minlength="6">
+  <p id="campus-msg" class="campus-msg"></p>
 </form>
 
-   
-    </section>
-  </main>
+    </div>
+  </section>
+</main>
 
 
-
-</body>
-</html>
